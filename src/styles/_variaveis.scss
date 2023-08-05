@@ -1,1 +1,33 @@
-﻿
+﻿$corDeFundo: #0E0B14;
+$corTextoPrimaria: #F9F9F9;
+$corTextoSecundaria: #CACACA;
+$backgroundImage: url(../images/bleach_fundo.jpeg);
+
+@mixin fonte($fontSize: 16px) {
+    color: $corTextoSecundaria;
+    letter-spacing: -.1px;
+}
+
+.links {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.font--big {
+    @include fonte(20px);
+
+    &:active {
+        color: $corTextoPrimaria;
+    }
+}
+
+.font--normal {
+    @include fonte;
+    font-size: 15px;
+}
+
+.font--small {
+    @include fonte;
+    font-size: 12px;
+    color: $corTextoPrimaria;
+}
