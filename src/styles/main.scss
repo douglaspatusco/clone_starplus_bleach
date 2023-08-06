@@ -1,13 +1,15 @@
 ﻿@use 'variaveis';
+@use 'description';
+@use 'details-menu';
 
 @font-face {
-    font-family: Avenir;
+    font-family: Avenir Regular;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Avenir;
+    font-family: Avenir Bold;
     src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
 }
@@ -16,7 +18,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Avenir;
+    font-family: Avenir Regular;
+    text-decoration: none;
 }
 
 body {
@@ -28,100 +31,6 @@ body {
     width: 100%;
     height: 100vw;
     top: 72px;
-    background-color: #0E0B13;
+    background-color: variaveis.$corDeFundo;
     padding: 0 calc(3.5vw + 24px);
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 112px;
-    position: relative;
-
-    &__image {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 56px 0 16px 0;
-        
-        & > img {
-            max-width: 340px;
-            min-width: 100px;
-            width: 35vw;
-        }
-    }
-
-    &__container {
-        max-width: 874px;
-
-        h1 {
-            margin: 16px 0;
-        }
-    }
-
-    &__about {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-        &__seasons {
-            display: flex;
-            gap: 4px;
-            align-items: center;
-            margin: 0px 0px 5px;
-        }
-        
-        img {
-            height: 20px;
-        }
-    }
-
-    &__plays {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin:  32px 0 16px 0;
-
-        .button--play {
-            color: variaveis.$corDeFundo;
-            font-size: 15px;
-            font-weight: 900;
-            letter-spacing: 1.5px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            height: 56px;
-            padding: 0 24px;
-            margin: 4px 0;
-            border: none;
-            border-radius: 0.25rem;
-            cursor: pointer;
-
-            img {
-                width: 36px;
-                height: 36px;
-            }
-        }
-
-        .button--watch-list {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid #f9f9f9;
-            height: 2.75rem;
-            width: 2.75rem;
-            border-radius: 100%;
-            cursor: pointer;
-            background-color: variaveis.$corDeFundo;
-            
-            &--icon {
-                height: 16px;
-                content: url(../../src/images/plus.svg);
-                color: variaveis.$corTextoPrimaria;
-            }
-        }
-    }
-
 }

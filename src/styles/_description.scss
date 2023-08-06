@@ -1,0 +1,128 @@
+﻿@use 'variaveis';
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 112px;
+    position: relative;
+    color: variaveis.$corTextoPrimaria;
+
+    &__image {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 56px 0 16px 0;
+        
+        & > img {
+            max-width: 340px;
+            min-width: 100px;
+            width: 35vw;
+        }
+    }
+
+    &__container {
+        max-width: 874px;
+
+        .ep-title {
+            padding-top: 16px;
+            font-family: Avenir Bold;
+            font-size: 20px;
+            letter-spacing: .11px;
+            line-height: 1.6;
+        }
+
+        .ep-sinopse {
+            font-size: 20px;
+            padding: 16px 0;
+            letter-spacing: -.1px;
+            line-height: 1.6;
+        }
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &__seasons {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            margin: 0px 0px 5px;
+        }
+        
+        p {
+            font-size: 12px;
+            letter-spacing: -.1px;
+            line-height: 1.5;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+
+    &__plays {
+        display: flex;
+        align-items: center;
+        margin: 32px 0 0 0;
+
+        .button--play {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            
+            height: 56px;
+            padding: 0 24px;
+            margin: 4px 12px 4px 0;
+            
+            font-family: Avenir Bold;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            
+            color: variaveis.$corDeFundo;
+            background-color: variaveis.$corTextoPrimaria;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+
+            &:hover {
+                opacity: .7;
+                transition: all .2s ease-in-out;
+            }
+        }
+
+        .button--watch-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid variaveis.$corTextoPrimaria;
+            height: 2.75rem;
+            width: 2.75rem;
+            margin: 0 0 0 8px;
+            border-radius: 100%;
+            cursor: pointer;
+            background-color: variaveis.$corDeFundo;
+            
+            &--icon {
+                height: 16px;
+                content: url(../../src/images/plus.svg);
+                color: variaveis.$corTextoPrimaria;
+            }
+
+            &:hover {
+                filter: invert(100);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+
+}

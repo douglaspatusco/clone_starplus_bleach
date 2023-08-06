@@ -1,0 +1,15 @@
+﻿.details-menu {
+    display: flex;
+    border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+    z-index: 2;
+    
+    &__item {
+        position: relative;
+        margin-right: 40px;
+        padding-bottom: 15px;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        list-style: none;
+        cursor: pointer;
+    }
+}
