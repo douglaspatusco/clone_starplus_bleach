@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 112px;
     position: relative;
     color: variaveis.$corTextoPrimaria;
 
@@ -13,7 +12,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        padding: 56px 0 16px 0;
+        padding: 16px 0;
         
         & > img {
             max-width: 340px;
@@ -24,6 +23,7 @@
 
     &__container {
         max-width: 874px;
+        margin-bottom: 56px;
 
         .ep-title {
             padding-top: 16px;
@@ -34,8 +34,9 @@
         }
 
         .ep-sinopse {
-            font-size: 20px;
             padding: 16px 0;
+            font-family: Avenir Regular;
+            font-size: 20px;
             letter-spacing: -.1px;
             line-height: 1.6;
         }
@@ -45,7 +46,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+        font-family: Avenir Regular;
+
         &__seasons {
             display: flex;
             gap: 4px;
@@ -69,7 +71,7 @@
         align-items: center;
         margin: 32px 0 0 0;
 
-        .button--play {
+        &__play {
             display: flex;
             align-items: center;
             gap: 12px;
@@ -100,7 +102,7 @@
             }
         }
 
-        .button--watch-list {
+        &__watch-list {
             display: flex;
             align-items: center;
             justify-content: center;

@@ -1,0 +1,41 @@
+﻿@use 'variaveis';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 100px auto 0;
+    
+    font-family: Avenir Regular;
+    font-size: 12px;
+    letter-spacing: -.1px;
+    line-height: 1.5;
+    color: variaveis.$corTextoSecundaria;
+    
+    &__logo {
+        width: 84px;
+    }
+
+    &__links {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        
+        &__item {
+            color: variaveis.$corTextoSecundaria;
+            margin: 10px 5px 10px;
+            padding: 1px 6px;
+        }
+    }
+
+    &__disclaimer {
+        text-align: center;
+    }
+
+    &__copyright {
+        display: block;
+        padding: 8px 0 24px 0;
+    }
+
+}
