@@ -1,0 +1,56 @@
+﻿@use 'variaveis';
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    width: 100%;
+    font-family: Avenir Bold;
+    position: fixed;
+    background-color: variaveis.$corDeFundo;
+    z-index: 1;
+
+    .menu__logolist {
+        display: flex;
+    }
+
+    .logo {
+        margin-right: 32px;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        
+        &__item {
+            color: variaveis.$corTextoPrimaria;
+            display: flex;
+            align-items: center;
+            padding: 16px 18px;
+
+            
+            img {
+                width: 20px;
+            }
+            
+            p {
+                font-size: 13px;
+                letter-spacing: 1.42px;
+                line-height: 1.07;
+                padding: 2px 0;
+                margin: 13px 8px;
+            }
+        }
+    }
+
+    &__profile {
+        width: 48px;
+        cursor: pointer;
+    }
+}
+
+.icon--small {
+    width: 12px !important;
+}

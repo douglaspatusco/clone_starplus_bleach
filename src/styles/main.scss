@@ -1,4 +1,5 @@
 ﻿@use 'variaveis';
+@use 'menu-top';
 @use 'description';
 @use 'details-menu';
 @use 'footer';
@@ -26,8 +27,12 @@ body {
     background-color: variaveis.$corDeFundo;
 }
 
+.logo {
+    width: 84px;
+}
+
 .about-content {
     width: 100%;
     background-color: variaveis.$corDeFundo;
-    padding: 0 calc(3.5vw + 24px) 112px;
+    padding: 72px calc(3.5vw + 24px) 112px;
 }
