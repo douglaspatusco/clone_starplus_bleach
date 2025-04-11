@@ -6,6 +6,11 @@ Este projeto é uma réplica da interface do Star+, focada na série "BLEACH: Th
 
 👉 [Clique aqui para acessar o clone](https://clone-starplus-bleach-b6k7-np63lb1u9-dougeduardo.vercel.app/)
 
+## 📸 Demonstração
+
+![preview](https://i.imgur.com/WGv9YSA.png)
+
+---
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML
